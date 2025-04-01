@@ -16,5 +16,5 @@ class Address extends Model
      *
      * @var list<string>
      */
-    protected $fillable = ['user_id', 'street', 'suburb'];
+    protected $fillable = ['user_id', 'street', 'suburb', 'city'];
 }

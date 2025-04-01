@@ -14,3 +14,4 @@ Route::get('/', function () {
 Route::resource('/user', UserController::class);
 
 Route::resource('user.address', AddressController::class);
+    

@@ -25,6 +25,7 @@ class AddressRequest extends FormRequest
             "user_id" => "required|exists:users,id",
             "street" => "required|string",
             "suburb" => "required|string",
+            "city" => "required|string",
         ];
     }
 
@@ -33,6 +34,7 @@ class AddressRequest extends FormRequest
         return [
             'street.required' => 'Street is required',
             'suburb.required' => 'Suburb is required',
+            "city.required" => 'City is required',
         ];
     }
 }

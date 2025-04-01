@@ -1,7 +1,7 @@
 <template>
     <Head title="View User" />
     <div
-        class="p-6 bg-gray-200 flex flex-col items-center justify-center gap-4"
+        class="p-6 bg-gray-200 flex flex-col items-center justify-center gap-4 h-screen"
     >
         <h1 class="text-2xl font-bold text-gray-800 mb-4">Datos del usuario</h1>
         <div class="flex flex-col gap-4">
@@ -48,6 +48,10 @@
                     <p class="text-gray-600">
                         Colonia:
                         <span class="font-medium">{{ address.suburb }}</span>
+                    </p>
+                    <p class="text-gray-600">
+                        Ciudad:
+                        <span class="font-medium">{{ address.city }}</span>
                     </p>
                     <p class="text-gray-600">
                         Fecha de creación:
