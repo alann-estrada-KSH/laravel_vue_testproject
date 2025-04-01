@@ -72,9 +72,15 @@ class AddressController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $user, string $address)
     {
-        //
+       $searchAddress = Address::where('id', $address)->where('user_id', $user)->first();
+        if (!$searchAddress) {
+            return redirect()->route('user.show', $user)->with('error', 'Dirección no encontrada');
+        }
+
+        $searchAddress->update($request->all());
+        return redirect()->route('user.show', $user)->with('success', 'Dirección actualizada correctamente');
     }
 
     /**

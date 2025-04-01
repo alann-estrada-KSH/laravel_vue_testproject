@@ -9,32 +9,42 @@
 
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1"
-                    >Nombre:</label
+                    >Calle</label
                 >
                 <input
-                    v-model="form.name"
+                    v-model="form.street"
+                    type="text"
+                    placeholder="Calle"
+                    from="street"
+                    name="street"
                     class="border border-gray-300 rounded-lg p-2 w-full focus:ring-blue-500 focus:border-blue-500"
                 />
             </div>
 
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1"
-                    >Correo electrónico:</label
+                    >Colonia</label
                 >
                 <input
-                    v-model="form.email"
-                    type="email"
+                    v-model="form.suburb"
+                    type="text"
+                    placeholder="Colonia"
+                    from="suburb"
+                    name="suburb"
                     class="border border-gray-300 rounded-lg p-2 w-full focus:ring-blue-500 focus:border-blue-500"
                 />
             </div>
 
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1"
-                    >Contraseña:</label
+                    >Ciudad</label
                 >
                 <input
-                    type="password"
-                    v-model="form.password"
+                    v-model="form.city"
+                    type="text"
+                    placeholder="Ciudad"
+                    from="city"
+                    name="city"
                     class="border border-gray-300 rounded-lg p-2 w-full focus:ring-blue-500 focus:border-blue-500"
                 />
             </div>
